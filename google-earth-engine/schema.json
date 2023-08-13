@@ -4,9 +4,17 @@
   "description": "",
   "type": "object",
   "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
     "datasetId": {
       "type": "string",
       "minLength": 1
+    },
+    "format": {
+      "type": "string",
+      "enum": ["ImageCollection", "Image", "FeatureCollection", "Feature"]
     },
     "name": {
       "type": "string",
@@ -15,14 +23,27 @@
     "description": {
       "type": "string"
     },
+    "source": {
+      "type": "string"
+    },
+    "periodType": {
+      "type": "string",
+      "enum": ["Yearly"]
+    },
     "band": {
       "type": "string"
     },
     "aggregations": {
       "type": "array"
     },
+    "defaultAggregation": {
+      "type": "string"
+    },
     "defaultAggregations": {
       "type": "array"
+    },
+    "popup": {
+      "type": "string"
     },
     "methods": {
       "type": "array",
@@ -55,7 +76,7 @@
         }
       }
     },
-    "classes": {
+    "style": {
       "type": "array",
       "uniqueItems": true,
       "items": {
@@ -75,6 +96,6 @@
       }
     }
   },
-  "required": ["datasetId", "name", "description"],
+  "required": ["id", "datasetId", "name", "description"],
   "additionalProperties": false
 }
