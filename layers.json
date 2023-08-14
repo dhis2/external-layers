@@ -1,8 +1,8 @@
 [
   {
-    "id": "google-earth-engine/landcover"
+    "id": "earthengine_landcover"
   },
   {
-    "id": "arc-gis-online/settlement-extents"
+    "id": "arcgis_settlement-extents"
   }
 ]

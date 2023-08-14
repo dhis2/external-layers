@@ -1,5 +1,5 @@
 {
-  "id": "google-earth-engine/landcover",
+  "id": "earthengine_landcover",
   "datasetId": "MODIS/061/MCD12Q1",
   "format": "ImageCollection",
   "name": "Landcover",

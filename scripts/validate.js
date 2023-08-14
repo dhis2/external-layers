@@ -1,8 +1,8 @@
 const Ajv = require("ajv");
 const ajv = new Ajv();
 
-const schema = require("../google-earth-engine/schema.json");
-const landcover = require("../google-earth-engine/landcover.json");
+const schema = require("../earthengine/schema.json");
+const landcover = require("../earthengine/landcover.json");
 
 const validate = ajv.compile(schema);
 
