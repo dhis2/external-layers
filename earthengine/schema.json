@@ -26,12 +26,18 @@
     "source": {
       "type": "string"
     },
+    "unit": {
+      "type": "string"
+    },
     "periodType": {
       "type": "string",
       "enum": ["Yearly"]
     },
     "band": {
       "type": "string"
+    },
+    "mosaic": {
+      "type": "boolean"
     },
     "aggregations": {
       "type": "array"
@@ -81,23 +87,47 @@
       }
     },
     "style": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "type": "object",
-        "required": ["value", "color", "name"],
-        "properties": {
-          "value": {
-            "type": "integer"
-          },
-          "color": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
+      "anyOf": [
+        {
+          "type": "object",
+          "required": ["min", "max", "palette"],
+          "properties": {
+            "min": {
+              "type": "number"
+            },
+            "max": {
+              "type": "number"
+            },
+            "palette": {
+              "type": "string"
+            }
+          }
+        },
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": ["value", "color", "name"],
+            "properties": {
+              "value": {
+                "type": "integer"
+              },
+              "color": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
           }
         }
-      }
+      ]
+    },
+    "opacity": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
     }
   },
   "required": ["id", "datasetId", "name", "description"],
