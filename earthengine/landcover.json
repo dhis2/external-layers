@@ -7,7 +7,7 @@
   "source": "NASA LP DAAC / Google Earth Engine",
   "periodType": "Yearly",
   "band": "LC_Type1",
-  "defaultAggregation": "percentage",
+  "defaultAggregations": "percentage",
   "popup": "{name}: {value}",
   "filters": [
     {

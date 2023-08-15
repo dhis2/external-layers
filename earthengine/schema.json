@@ -36,11 +36,15 @@
     "aggregations": {
       "type": "array"
     },
-    "defaultAggregation": {
-      "type": "string"
-    },
     "defaultAggregations": {
-      "type": "array"
+      "anyOf": [
+        {
+          "type": "array"
+        },
+        {
+          "type": "string"
+        }
+      ]
     },
     "popup": {
       "type": "string"
