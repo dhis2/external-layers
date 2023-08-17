@@ -8,8 +8,15 @@
   "unit": "°C during daytime",
   "aggregations": ["min", "max", "mean", "median", "stdDev", "variance"],
   "defaultAggregations": ["mean", "min", "max"],
-  "periodType": "custom",
+  "periodType": "by year",
   "band": "LST_Day_1km",
+  "filters": [
+    {
+      "type": "eq",
+      "name": "system:index",
+      "value": "$value"
+    }
+  ],
   "style": {
     "min": 0,
     "max": 40,

@@ -37,7 +37,7 @@
     },
     "periodType": {
       "type": "string",
-      "enum": ["yearly", "custom"]
+      "enum": ["yearly", "by year"]
     },
     "band": {
       "type": "string"
