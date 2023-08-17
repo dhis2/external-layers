@@ -7,7 +7,7 @@
   "source": "WorldPop / Google Earth Engine",
   "unit": "people per hectare",
   "defaultAggregations": ["sum", "mean"],
-  "periodType": "Yearly",
+  "periodType": "yearly",
   "band": "population",
   "filters": [
     {

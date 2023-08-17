@@ -23,6 +23,12 @@
     "description": {
       "type": "string"
     },
+    "notice": {
+      "type": "string"
+    },
+    "error": {
+      "type": "string"
+    },
     "source": {
       "type": "string"
     },
@@ -31,10 +37,25 @@
     },
     "periodType": {
       "type": "string",
-      "enum": ["Yearly"]
+      "enum": ["yearly", "custom"]
     },
     "band": {
       "type": "string"
+    },
+    "bands": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      }
     },
     "mosaic": {
       "type": "boolean"
@@ -90,7 +111,6 @@
       "anyOf": [
         {
           "type": "object",
-          "required": ["min", "max", "palette"],
           "properties": {
             "min": {
               "type": "number"
@@ -100,6 +120,12 @@
             },
             "palette": {
               "type": "string"
+            },
+            "color": {
+              "type": "string"
+            },
+            "strokeWidth": {
+              "type": "number"
             }
           }
         },
@@ -123,6 +149,12 @@
           }
         }
       ]
+    },
+    "tileScale": {
+      "type": "integer"
+    },
+    "mask": {
+      "type": "boolean"
     },
     "opacity": {
       "type": "number",

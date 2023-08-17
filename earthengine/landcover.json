@@ -5,7 +5,7 @@
   "name": "Landcover",
   "description": "Distinct landcover types collected from satellites.",
   "source": "NASA LP DAAC / Google Earth Engine",
-  "periodType": "Yearly",
+  "periodType": "yearly",
   "band": "LC_Type1",
   "defaultAggregations": "percentage",
   "popup": "{name}: {value}",

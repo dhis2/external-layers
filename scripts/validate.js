@@ -2,7 +2,7 @@ const Ajv = require("ajv");
 const ajv = new Ajv();
 
 const schema = require("../earthengine/schema.json");
-const landcover = require("../earthengine/landcover.json");
+const landcover = require("../earthengine/precipitation.json");
 
 const validate = ajv.compile(schema);
 
