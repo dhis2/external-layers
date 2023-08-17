@@ -1,5 +1,5 @@
 {
-  "id": "earthengine_temperature",
+  "id": "earthengine_precipitation",
   "datasetId": "UCSB-CHG/CHIRPS/PENTAD",
   "format": "ImageCollection",
   "name": "Precipitation",
