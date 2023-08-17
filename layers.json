@@ -9,10 +9,16 @@
     "id": "earthengine_building-footprints"
   },
   {
+    "id": "earthengine_elevation"
+  },
+  {
     "id": "earthengine_landcover"
   },
   {
     "id": "earthengine_temperature"
+  },
+  {
+    "id": "earthengine_precipitation"
   },
   {
     "id": "arcgis_settlement-extents"
