@@ -12,7 +12,14 @@
   "style": {
     "min": 0,
     "max": 1500,
-    "palette": "#ffffd4,#fee391,#fec44f,#fe9929,#d95f0e,#993404"
+    "palette": [
+      "#ffffd4",
+      "#fee391",
+      "#fec44f",
+      "#fe9929",
+      "#d95f0e",
+      "#993404"
+    ]
   },
   "opacity": 0.9
 }

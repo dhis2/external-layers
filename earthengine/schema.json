@@ -119,7 +119,7 @@
               "type": "number"
             },
             "palette": {
-              "type": "string"
+              "type": "array"
             },
             "color": {
               "type": "string"
