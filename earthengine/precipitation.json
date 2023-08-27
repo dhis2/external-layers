@@ -9,7 +9,7 @@
   "aggregations": ["min", "max", "mean", "median", "stdDev", "variance"],
   "defaultAggregations": ["mean", "min", "max"],
   "periodType": "by year",
-  "band": "LST_Day_1km",
+  "band": "precipitation",
   "filters": [
     {
       "type": "eq",
