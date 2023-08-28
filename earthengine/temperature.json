@@ -1,0 +1,51 @@
+{
+  "id": "earthengine_temperature",
+  "datasetId": "MODIS/006/MOD11A2",
+  "format": "ImageCollection",
+  "name": "Temperature",
+  "description": "Land surface temperatures collected from satellite. Blank spots will appear in areas with a persistent cloud cover.",
+  "source": "NASA LP DAAC / Google Earth Engine",
+  "unit": "°C during daytime",
+  "aggregations": ["min", "max", "mean", "median", "stdDev", "variance"],
+  "defaultAggregations": ["mean", "min", "max"],
+  "periodType": "by year",
+  "band": "LST_Day_1km",
+  "filters": [
+    {
+      "type": "eq",
+      "name": "system:index",
+      "value": "$value"
+    }
+  ],
+  "style": {
+    "min": 0,
+    "max": 40,
+    "palette": [
+      "#fff5f0",
+      "#fee0d2",
+      "#fcbba1",
+      "#fc9272",
+      "#fb6a4a",
+      "#ef3b2c",
+      "#cb181d",
+      "#a50f15",
+      "#67000d"
+    ]
+  },
+  "methods": [
+    {
+      "name": "toFloat",
+      "arguments": []
+    },
+    {
+      "name": "multiply",
+      "arguments": [0.02]
+    },
+    {
+      "name": "subtract",
+      "arguments": [273.15]
+    }
+  ],
+  "mask": true,
+  "opacity": 0.9
+}

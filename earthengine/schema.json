@@ -1,0 +1,167 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Google Earth Engine layer for DHIS2 Maps",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "datasetId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "format": {
+      "type": "string",
+      "enum": ["ImageCollection", "Image", "FeatureCollection", "Feature"]
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string"
+    },
+    "notice": {
+      "type": "string"
+    },
+    "error": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "periodType": {
+      "type": "string",
+      "enum": ["yearly", "by year"]
+    },
+    "band": {
+      "type": "string"
+    },
+    "bands": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "mosaic": {
+      "type": "boolean"
+    },
+    "aggregations": {
+      "type": "array"
+    },
+    "defaultAggregations": {
+      "anyOf": [
+        {
+          "type": "array"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "popup": {
+      "type": "string"
+    },
+    "methods": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "arguments"],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "arguments": {
+            "type": "array"
+          }
+        }
+      }
+    },
+    "filters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "name", "value"],
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "value": {}
+        }
+      }
+    },
+    "style": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "number"
+            },
+            "max": {
+              "type": "number"
+            },
+            "palette": {
+              "type": "array"
+            },
+            "color": {
+              "type": "string"
+            },
+            "strokeWidth": {
+              "type": "number"
+            }
+          }
+        },
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": ["value", "color", "name"],
+            "properties": {
+              "value": {
+                "type": "integer"
+              },
+              "color": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "tileScale": {
+      "type": "integer"
+    },
+    "mask": {
+      "type": "boolean"
+    },
+    "opacity": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    }
+  },
+  "required": ["id", "datasetId", "name", "description"],
+  "additionalProperties": false
+}

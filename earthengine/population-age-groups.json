@@ -1,0 +1,179 @@
+{
+  "id": "earthengine_population-age-groups",
+  "datasetId": "WorldPop/GP/100m/pop_age_sex_cons_unadj",
+  "format": "ImageCollection",
+  "name": "Population age groups",
+  "description": "Estimated number of people living in an area, grouped by age and gender.",
+  "source": "WorldPop / Google Earth Engine",
+  "unit": "people per hectare",
+  "defaultAggregations": ["sum", "mean"],
+  "periodType": "yearly",
+  "bands": [
+    {
+      "id": "M_0",
+      "name": "Male 0 - 1 years"
+    },
+    {
+      "id": "M_1",
+      "name": "Male 1 - 4 years"
+    },
+    {
+      "id": "M_5",
+      "name": "Male 5 - 9 years"
+    },
+    {
+      "id": "M_10",
+      "name": "Male 10 - 14 years"
+    },
+    {
+      "id": "M_15",
+      "name": "Male 15 - 19 years"
+    },
+    {
+      "id": "M_20",
+      "name": "Male 20 - 24 years"
+    },
+    {
+      "id": "M_25",
+      "name": "Male 25 - 29 years"
+    },
+    {
+      "id": "M_30",
+      "name": "Male 30 - 34 years"
+    },
+    {
+      "id": "M_35",
+      "name": "Male 35 - 39 years"
+    },
+    {
+      "id": "M_40",
+      "name": "Male 40 - 44 years"
+    },
+    {
+      "id": "M_45",
+      "name": "Male 45 - 49 years"
+    },
+    {
+      "id": "M_50",
+      "name": "Male 50 - 54 years"
+    },
+    {
+      "id": "M_55",
+      "name": "Male 55 - 59 years"
+    },
+    {
+      "id": "M_60",
+      "name": "Male 60 - 64 years"
+    },
+    {
+      "id": "M_65",
+      "name": "Male 65 - 69 years"
+    },
+    {
+      "id": "M_70",
+      "name": "Male 70 - 74 years"
+    },
+    {
+      "id": "M_75",
+      "name": "Male 75 - 79 years"
+    },
+    {
+      "id": "M_80",
+      "name": "Male 80 years and above"
+    },
+    {
+      "id": "F_0",
+      "name": "Female 0 - 1 years"
+    },
+    {
+      "id": "F_1",
+      "name": "Female 1 - 4 years"
+    },
+    {
+      "id": "F_5",
+      "name": "Female 5 - 9 years"
+    },
+    {
+      "id": "F_10",
+      "name": "Female 10 - 14 years"
+    },
+    {
+      "id": "F_15",
+      "name": "Female 15 - 19 years"
+    },
+    {
+      "id": "F_20",
+      "name": "Female 20 - 24 years"
+    },
+    {
+      "id": "F_25",
+      "name": "Female 25 - 29 years"
+    },
+    {
+      "id": "F_30",
+      "name": "Female 30 - 34 years"
+    },
+    {
+      "id": "F_35",
+      "name": "Female 35 - 39 years"
+    },
+    {
+      "id": "F_40",
+      "name": "Female 40 - 44 years"
+    },
+    {
+      "id": "F_45",
+      "name": "Female 45 - 49 years"
+    },
+    {
+      "id": "F_50",
+      "name": "Female 50 - 54 years"
+    },
+    {
+      "id": "F_55",
+      "name": "Female 55 - 59 years"
+    },
+    {
+      "id": "F_60",
+      "name": "Female 60 - 64 years"
+    },
+    {
+      "id": "F_65",
+      "name": "Female 65 - 69 years"
+    },
+    {
+      "id": "F_70",
+      "name": "Female 70 - 74 years"
+    },
+    {
+      "id": "F_75",
+      "name": "Female 75 - 79 years"
+    },
+    {
+      "id": "F_80",
+      "name": "Female 80 years and above"
+    }
+  ],
+  "filters": [
+    {
+      "type": "eq",
+      "name": "year",
+      "value": "$value"
+    }
+  ],
+  "mosaic": true,
+  "style": {
+    "min": 0,
+    "max": 10,
+    "palette": [
+      "#fee5d9",
+      "#fcbba1",
+      "#fc9272",
+      "#fb6a4a",
+      "#de2d26",
+      "#a50f15"
+    ]
+  },
+  "tileScale": 4,
+  "opacity": 0.9
+}
