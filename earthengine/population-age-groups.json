@@ -1,4 +1,5 @@
 {
+  "service": "earthengine",
   "id": "earthengine_population-age-groups",
   "datasetId": "WorldPop/GP/100m/pop_age_sex_cons_unadj",
   "format": "ImageCollection",

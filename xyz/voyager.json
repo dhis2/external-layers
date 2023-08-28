@@ -1,4 +1,5 @@
 {
+  "service": "xyz",
   "id": "xyz_voyager",
   "name": "Carto Voyager Raster",
   "description": "A bright, high contrast map designed for data visualization",

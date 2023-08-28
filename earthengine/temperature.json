@@ -1,4 +1,5 @@
 {
+  "service": "earthengine",
   "id": "earthengine_temperature",
   "datasetId": "MODIS/006/MOD11A2",
   "format": "ImageCollection",

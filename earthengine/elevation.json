@@ -1,4 +1,5 @@
 {
+  "service": "earthengine",
   "id": "earthengine_elevation",
   "datasetId": "USGS/SRTMGL1_003",
   "format": "ImageCollection",

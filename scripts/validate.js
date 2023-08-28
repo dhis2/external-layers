@@ -1,13 +1,30 @@
 const Ajv = require("ajv");
 const ajv = new Ajv();
 
-// const schema = require("../earthengine/schema.json");
-// const landcover = require("../earthengine/precipitation.json");
+const layers = require("../layers.json");
 
-const schema = require("../xyz/schema.json");
-const landcover = require("../xyz/voyager.json");
+layers.forEach((layer) => {
+  const [service, id] = layer.id.split("_");
+  const schema = require(`../${service}/schema.json`);
+  const item = require(`../${service}/${id}.json`);
 
-const validate = ajv.compile(schema);
+  if (schema && item) {
+    const validate = ajv.compile(schema);
 
-const valid = validate(landcover);
-if (!valid) console.log(validate.errors);
+    const valid = validate(item);
+
+    if (!valid) {
+      const messages = validate.errors.map((error) => error.message);
+      console.log(`"${service}/${id}" is not valid:`, messages);
+    } else {
+      console.log(`"${service}/${id}" is valid`);
+    }
+  } else {
+    if (!schema) {
+      console.log(`Missing schema for ${layer.id}`);
+    }
+    if (!item) {
+      console.log(`Missing layer for ${layer.id}`);
+    }
+  }
+});

@@ -1,4 +1,5 @@
 {
+  "service": "earthengine",
   "id": "earthengine_building-footprints",
   "datasetId": "GOOGLE/Research/open-buildings/v1/polygons",
   "format": "FeatureCollection",

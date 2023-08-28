@@ -4,6 +4,9 @@
   "description": "",
   "type": "object",
   "properties": {
+    "service": {
+      "const": "wms"
+    },
     "id": {
       "type": "string",
       "minLength": 1

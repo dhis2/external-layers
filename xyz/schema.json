@@ -4,6 +4,9 @@
   "description": "",
   "type": "object",
   "properties": {
+    "service": {
+      "const": "xyz"
+    },
     "id": {
       "type": "string",
       "minLength": 1

@@ -1,4 +1,7 @@
 {
+  "service": "arcgis",
   "id": "arcgis_settlement-extents",
-  "name": "Settlement extents"
+  "name": "Settlement extents",
+  "description": "",
+  "url": "x"
 }

@@ -4,6 +4,9 @@
   "description": "",
   "type": "object",
   "properties": {
+    "service": {
+      "const": "earthengine"
+    },
     "id": {
       "type": "string",
       "minLength": 1

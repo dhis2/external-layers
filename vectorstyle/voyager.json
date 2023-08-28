@@ -1,4 +1,5 @@
 {
+  "service": "vectorstyle",
   "id": "vectorstyle_voyager",
   "name": "Carto Voyager Vector",
   "description": "A bright, high contrast map designed for data visualization",

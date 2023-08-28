@@ -1,4 +1,5 @@
 {
+  "service": "earthengine",
   "id": "earthengine_precipitation",
   "datasetId": "UCSB-CHG/CHIRPS/PENTAD",
   "format": "ImageCollection",

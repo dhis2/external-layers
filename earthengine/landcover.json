@@ -1,4 +1,5 @@
 {
+  "service": "earthengine",
   "id": "earthengine_landcover",
   "datasetId": "MODIS/061/MCD12Q1",
   "format": "ImageCollection",
