@@ -18,8 +18,12 @@
     "url": {
       "type": "string",
       "minLength": 1
+    },
+    "position": {
+      "type": "string",
+      "enum": ["basemap"]
     }
   },
-  "required": ["id", "name", "description", "url"],
+  "required": ["id", "name", "description", "url", "position"],
   "additionalProperties": false
 }

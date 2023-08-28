@@ -1,6 +1,6 @@
 {
   "id": "xyz_voyager",
-  "name": "Carto Voyager",
+  "name": "Carto Voyager Raster",
   "description": "A bright, high contrast map designed for data visualization",
   "url": "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{scale}.png",
   "attribution": "<a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>",

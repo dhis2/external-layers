@@ -27,6 +27,6 @@
       "enum": ["basemap", "overlay"]
     }
   },
-  "required": ["id", "name", "description", "url"],
+  "required": ["id", "name", "description", "url", "position"],
   "additionalProperties": false
 }
