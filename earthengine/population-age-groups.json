@@ -158,7 +158,7 @@
   "filters": [
     {
       "type": "eq",
-      "arguments": ["year", "$year"]
+      "arguments": ["year", "$1"]
     }
   ],
   "mosaic": true,
