@@ -98,15 +98,14 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["type", "name", "value"],
+        "required": ["type", "arguments"],
         "properties": {
           "type": {
             "type": "string"
           },
-          "name": {
-            "type": "string"
-          },
-          "value": {}
+          "arguments": {
+            "type": "array"
+          }
         }
       }
     },

@@ -158,8 +158,7 @@
   "filters": [
     {
       "type": "eq",
-      "name": "year",
-      "value": "$value"
+      "arguments": ["year", "$value"]
     }
   ],
   "mosaic": true,

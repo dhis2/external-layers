@@ -14,8 +14,7 @@
   "filters": [
     {
       "type": "eq",
-      "name": "system:index",
-      "value": "$value"
+      "arguments": ["system:index", "$value"]
     }
   ],
   "style": {
