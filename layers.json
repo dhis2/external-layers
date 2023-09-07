@@ -18,6 +18,9 @@
     "id": "earthengine_temperature"
   },
   {
+    "id": "earthengine_temperature-daily"
+  },
+  {
     "id": "earthengine_precipitation"
   },
   {
