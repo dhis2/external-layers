@@ -42,6 +42,9 @@
       "type": "string",
       "enum": ["yearly", "daily", "by year"]
     },
+    "periodReducer": {
+      "type": "string"
+    },
     "band": {
       "type": "string"
     },

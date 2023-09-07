@@ -10,6 +10,7 @@
   "aggregations": ["min", "max", "mean", "median", "stdDev", "variance"],
   "defaultAggregations": ["mean", "min", "max"],
   "periodType": "daily",
+  "periodReducer": "mean",
   "band": "temperature_2m",
   "filters": [
     {
