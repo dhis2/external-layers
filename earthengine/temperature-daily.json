@@ -1,0 +1,50 @@
+{
+  "service": "earthengine",
+  "id": "earthengine_temperature-daily",
+  "datasetId": "ECMWF/ERA5_LAND/DAILY_AGGR",
+  "format": "ImageCollection",
+  "name": "Temperature (daily)",
+  "description": "Temperature at 2m above the surface",
+  "source": "Copernicus Climate Data Store / Google Earth Engine",
+  "unit": "°C",
+  "aggregations": ["min", "max", "mean", "median", "stdDev", "variance"],
+  "defaultAggregations": ["mean", "min", "max"],
+  "periodType": "daily",
+  "band": "temperature_2m",
+  "filters": [
+    {
+      "type": "eq",
+      "arguments": ["system:index", "$1"]
+    }
+  ],
+  "methods": [
+    {
+      "name": "toFloat",
+      "arguments": []
+    },
+    {
+      "name": "multiply",
+      "arguments": [0.02]
+    },
+    {
+      "name": "subtract",
+      "arguments": [273.15]
+    }
+  ],
+  "style": {
+    "min": 0,
+    "max": 40,
+    "palette": [
+      "#fff5f0",
+      "#fee0d2",
+      "#fcbba1",
+      "#fc9272",
+      "#fb6a4a",
+      "#ef3b2c",
+      "#cb181d",
+      "#a50f15",
+      "#67000d"
+    ]
+  },
+  "opacity": 0.9
+}
