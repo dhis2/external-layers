@@ -1,0 +1,40 @@
+{
+  "service": "earthengine",
+  "id": "earthengine_precipitation-daily",
+  "datasetId": "ECMWF_ERA5_LAND_DAILY_AGGR",
+  "format": "ImageCollection",
+  "name": "Precipitation",
+  "description": "Precipitation",
+  "source": "Copernicus Climate Data Store / Google Earth Engine",
+  "unit": "millimeter",
+  "aggregations": ["min", "max", "mean", "median", "stdDev", "variance"],
+  "defaultAggregations": ["mean", "min", "max"],
+  "periodType": "by year",
+  "band": "total_precipitation_sum",
+  "filters": [
+    {
+      "type": "eq",
+      "arguments": ["system:index", "$1"]
+    }
+  ],
+  "methods": [
+    {
+      "name": "divide",
+      "arguments": [1000]
+    }
+  ],
+  "style": {
+    "min": 0,
+    "max": 100,
+    "palette": [
+      "#eff3ff",
+      "#c6dbef",
+      "#9ecae1",
+      "#6baed6",
+      "#3182bd",
+      "#08519c"
+    ]
+  },
+  "mask": true,
+  "opacity": 0.9
+}

@@ -21,6 +21,9 @@
     "id": "earthengine_precipitation"
   },
   {
+    "id": "earthengine_precipitation-daily"
+  },
+  {
     "id": "arcgis_settlement-extents"
   },
   {
