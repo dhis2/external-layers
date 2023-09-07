@@ -1,7 +1,7 @@
 {
   "service": "earthengine",
   "id": "earthengine_precipitation-daily",
-  "datasetId": "ECMWF_ERA5_LAND_DAILY_AGGR",
+  "datasetId": "ECMWF/ERA5_LAND/DAILY_AGGR",
   "format": "ImageCollection",
   "name": "Precipitation (daily)",
   "description": "Precipitation",
