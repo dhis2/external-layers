@@ -40,7 +40,7 @@
     },
     "periodType": {
       "type": "string",
-      "enum": ["yearly", "by year"]
+      "enum": ["yearly", "daily", "by year"]
     },
     "band": {
       "type": "string"
