@@ -9,7 +9,7 @@
   "unit": "millimeter",
   "aggregations": ["min", "max", "mean", "median", "stdDev", "variance"],
   "defaultAggregations": ["mean", "min", "max"],
-  "periodType": "by year",
+  "periodType": "daily",
   "band": "total_precipitation_sum",
   "filters": [
     {
