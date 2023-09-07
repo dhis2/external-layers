@@ -17,15 +17,9 @@
       "arguments": ["system:index", "$1"]
     }
   ],
-  "methods": [
-    {
-      "name": "divide",
-      "arguments": [1000]
-    }
-  ],
   "style": {
     "min": 0,
-    "max": 100,
+    "max": 1,
     "palette": [
       "#eff3ff",
       "#c6dbef",
@@ -35,6 +29,5 @@
       "#08519c"
     ]
   },
-  "mask": true,
   "opacity": 0.9
 }
