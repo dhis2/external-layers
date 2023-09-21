@@ -14,7 +14,7 @@
   "band": "total_precipitation_sum",
   "filters": [
     {
-      "type": "filterDate",
+      "type": "date",
       "arguments": ["$1", "$2"]
     }
   ],

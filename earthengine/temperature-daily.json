@@ -14,7 +14,7 @@
   "band": "temperature_2m",
   "filters": [
     {
-      "type": "filterDate",
+      "type": "date",
       "arguments": ["$1", "$2"]
     }
   ],
