@@ -14,8 +14,8 @@
   "band": "total_precipitation_sum",
   "filters": [
     {
-      "type": "eq",
-      "arguments": ["system:index", "$1"]
+      "type": "filterDate",
+      "arguments": ["$1", "$2"]
     }
   ],
   "methods": [

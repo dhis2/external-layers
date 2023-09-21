@@ -14,8 +14,8 @@
   "band": "temperature_2m",
   "filters": [
     {
-      "type": "eq",
-      "arguments": ["system:index", "$1"]
+      "type": "filterDate",
+      "arguments": ["$1", "$2"]
     }
   ],
   "methods": [
