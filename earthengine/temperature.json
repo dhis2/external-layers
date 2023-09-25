@@ -2,6 +2,7 @@
   "service": "earthengine",
   "id": "earthengine_temperature",
   "datasetId": "MODIS/006/MOD11A2",
+  "deprecated": true,
   "format": "ImageCollection",
   "name": "Temperature",
   "description": "Land surface temperatures collected from satellite. Blank spots will appear in areas with a persistent cloud cover.",

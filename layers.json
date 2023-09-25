@@ -18,13 +18,13 @@
     "id": "earthengine_temperature"
   },
   {
-    "id": "earthengine_temperature-daily"
+    "id": "earthengine_temperature-era5"
   },
   {
     "id": "earthengine_precipitation"
   },
   {
-    "id": "earthengine_precipitation-daily"
+    "id": "earthengine_precipitation-era5"
   },
   {
     "id": "arcgis_settlement-extents"

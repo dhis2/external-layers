@@ -2,6 +2,7 @@
   "service": "earthengine",
   "id": "earthengine_precipitation",
   "datasetId": "UCSB-CHG/CHIRPS/PENTAD",
+  "deprecated": true,
   "format": "ImageCollection",
   "name": "Precipitation",
   "description": "Precipitation collected from satellite and weather stations on the ground. The values are in millimeters within 5 days periods. Updated monthly, during the 3rd week of the following month.",
