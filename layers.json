@@ -15,13 +15,7 @@
     "id": "earthengine_landcover"
   },
   {
-    "id": "earthengine_temperature"
-  },
-  {
     "id": "earthengine_temperature-era5"
-  },
-  {
-    "id": "earthengine_precipitation"
   },
   {
     "id": "earthengine_precipitation-era5"
