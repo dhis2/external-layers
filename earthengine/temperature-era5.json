@@ -24,10 +24,6 @@
       "arguments": []
     },
     {
-      "name": "multiply",
-      "arguments": [0.02]
-    },
-    {
       "name": "subtract",
       "arguments": [273.15]
     }
