@@ -17,7 +17,7 @@
     },
     "format": {
       "type": "string",
-      "enum": ["ImageCollection", "Image", "FeatureCollection", "Feature"]
+      "enum": ["ImageCollection", "Image", "FeatureCollection"]
     },
     "name": {
       "type": "string",
